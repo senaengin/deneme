@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/tozPembe</item>
+        // item name="colorPrimaryDark">@color/tozPembe  //en üst çubuk pembe olmasın diye
+        <item name="android:textSize">24dp</item>  //cardview balonu büyütme
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>

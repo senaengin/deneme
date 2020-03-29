@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="tozPembe">#CF6A8C</color>
+    <color name="lila">#9B7CD1</color>
+    <color name="acikBordo">#B6362D</color>
+    <color name="sari">#CCA530</color>
+    <color name="acikTuruncu">#F17F5C</color>
+    <color name="turuncu">#DD4F23</color>
+    <color name="acikmavi">#749FC1</color>
+    <color name="acikYesil">#77C37A</color>
+    <color name="koyuYesil">#3E8341</color>
+    <color name="koyumavi">#1A2A83</color>
+
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/diger_toolbar"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="126dp"
+        android:layout_marginBottom="2.0dip"
+        android:background="@color/koyuYesil"
+        android:orientation="vertical"
+        android:padding="8.0dip"
+        android:weightSum="1.0">
+
+        <LinearLayout
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5.0dip"
+            android:weightSum="1.0">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:background="#ffffffff"
+                android:padding="2.0dip">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/search_bar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:clipToPadding="false"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="3.0dip"
+                    app:cardElevation="1.0dip">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/spacing_large"
+                            android:layout_height="0.0dip" />
+
+                        <EditText
+                            android:id="@+id/search_input"
+                            android:layout_width="357dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:background="@android:color/transparent"
+                            android:hint="Yiyecek/içecek ara"
+                            android:imeOptions="actionSearch"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textSize="24sp" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/digerTemizle"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:text="Seçilenleri Temizle"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>
